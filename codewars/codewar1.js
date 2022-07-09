@@ -12,3 +12,7 @@ const displayResults = solution('adc', 'bbc');
  // link for donation to the 11 years old developer
 
     // bit.ly/gdgaba
+    let stringOne = 'abc';
+    let stringTwo = 'abc';
+    let generatedResult = stringOne.indexOf(stringTwo, stringOne.length + stringTwo.length) !== -1;
+    console.log(generatedResult);
