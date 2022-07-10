@@ -27,4 +27,6 @@
   }
 
   const returnNameCount = likes(['wilson',  'james', 'alexander', 'david']);
+  console.log(returnNameCount);
+
   
