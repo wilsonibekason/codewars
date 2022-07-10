@@ -29,4 +29,27 @@
   const returnNameCount = likes(['wilson',  'james', 'alexander', 'david']);
   console.log(returnNameCount);
 
-  
+  // second solution
+
+  const names1 = ['wilson',  'james', 'alexander', 'david'];
+    const formatter = new  Intl.ListFormat('en-GRM', {
+        style: 'short',
+        type: 'conjunction',
+    })
+  const likes1 = (names) => {
+       let names1 = names1 || [];
+       switch(names1.length){
+        case 0:
+            return 'no one likes this';
+        case 1:
+            return `${names1[0]} likes this`;
+        case 2:
+            return `${formatter.format(names1)} likes this`;
+        case 3:
+            return `${formatter.format(names1)} like this`;
+        case 4:
+            return `${formatter.format(names1)} like this`;
+       }
+  }
+
+  console.log(likes1(names1))
