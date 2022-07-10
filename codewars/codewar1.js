@@ -32,4 +32,4 @@ const displayResults = solution('adc', 'bbc');
 
     console.log(solution3('xxs', 'bbc'));
 
-    console.log(solution2('xxs', 'bbc'));
+    console.log(solution2('xxs', 'bbc')); 
