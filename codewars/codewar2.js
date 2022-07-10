@@ -37,7 +37,7 @@
         type: 'conjunction',
     })
   const likes1 = (names) => {
-       let names1 = names1 || [];
+       let names1 = names || [];
        switch(names1.length){
         case 0:
             return 'no one likes this';
